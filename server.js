@@ -15,7 +15,7 @@ let router = require('./app/routers/router.js');
 // Importa y configura el middleware CORS
 const cors = require('cors');
 const corsOptions = {
-    origin: 'http://localhost:4200', // Origen permitido para las solicitudes
+    origin: ['http://localhost:3000', 'https://fronetejercicio.onrender.com'], // Cambia 'tu-frontend.onrender.com' por la URL de tu frontend en Render
     optionsSuccessStatus: 200 // Estado de éxito para las solicitudes de opciones
 };
 app.use(cors(corsOptions));
